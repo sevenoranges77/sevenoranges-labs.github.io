@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Oranges Labs | AI-Driven Product Studio</title>
+    <style>
+        /* 基础变量与重置 */
+        :root {
+            --bg-color: #FFFBF7; /* 米白色背景 */
+            --primary-orange: #FF8C00; /* 明亮橙色 */
+            --text-main: #333333;
+            --text-light: #666666;
+            --card-bg: #FFFFFF;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 导航与头部区 */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+        }
+        .logo span { color: var(--primary-orange); }
+        .hero-title {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        /* 项目矩阵区 */
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        @media (min-width: 768px) {
+            .projects-container { flex-direction: row; }
+        }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px 30px;
+            flex: 1;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 140, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 140, 0, 0.08);
+        }
+        .tag {
+            display: inline-block;
+            background-color: rgba(255, 140, 0, 0.1);
+            color: var(--primary-orange);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .project-title { font-size: 24px; margin-bottom: 15px; }
+        .project-desc { color: var(--text-light); font-size: 15px; margin-bottom: 25px; }
+        
+        /* 底部信息区 */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+            margin-bottom: 30px;
+        }
+        .contact-btn:hover { opacity: 0.9; }
+        .tech-stack {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Seven Oranges <span>Labs</span></div>
+        <h1 class="hero-title">Engineering AI solutions for specific domains.</h1>
+        <p class="hero-subtitle">We build LLM-driven applications focusing on personal productivity optimization and vertical community engagement.</p>
+    </header>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <span class="tag">Agentic Workflow</span>
+            <h2 class="project-title">CampusAI</h2>
+            <p class="project-desc">An intelligent desktop application powered by Large Language Models. Designed to streamline career advancement, it automates job application email management and orchestrates complex scheduling for academic and professional pipelines.</p>
+        </div>
+
+        <div class="project-card">
+            <span class="tag">Community Data</span>
+            <h2 class="project-title">Subtropical Never Hibernates</h2>
+            <p class="project-desc">A highly customized mini-program serving the vibrant Wu Tsing-fong & Sodagreen fan community. It integrates interactive features like song-guessing algorithms and generates personalized concert attendance data reports to enhance user retention.</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:founder@sevenoranges-labs.com" class="contact-btn">Contact Founder</a>
+        <p class="tech-stack">Currently building with Gemini APIs &amp; Google Cloud Platform.</p>
+        <p style="margin-top: 15px; font-size: 12px; color: #aaa;">&copy; 2026 Seven Oranges Labs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
